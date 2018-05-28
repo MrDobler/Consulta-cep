@@ -1,0 +1,25 @@
+<div class="container">
+    <img src="assets/imgs/logo.png" alt="logo">
+    <h1 class="title">Consulta Cep!</h1>
+    <mat-card class="content">
+      <h3>Digite aqui o CEP!</h3>
+      <mat-form-field>
+        <input matInput placeholder="Cep" type="text" #cep>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" (click)="getCep(cep.value)">Buscar!</button>
+      <mat-divider class="hr"></mat-divider>
+      <div>
+        <mat-list class="list">
+          <mat-list-item><span>CEP:&nbsp;</span> {{ arrayData['cep'] }} </mat-list-item>
+          <mat-list-item><span>Rua:&nbsp;</span> {{  arrayData['logradouro'] }} </mat-list-item>
+          <mat-list-item><span>Complemento:&nbsp;</span> {{  arrayData['complemento'] }} </mat-list-item>
+          <mat-list-item><span>Bairro:&nbsp;</span> {{ arrayData['bairro'] }} </mat-list-item>
+          <mat-list-item><span>Cidade:&nbsp;</span> {{ arrayData['localidade'] }} </mat-list-item>
+          <mat-list-item><span>UF:&nbsp;</span> {{ arrayData['uf'] }} </mat-list-item>
+          <mat-list-item><span>Nº do IBGE:&nbsp;</span> {{ arrayData['ibge'] }} </mat-list-item>          
+        </mat-list>  
+      </div>
+    
+    </mat-card>
+  </div>

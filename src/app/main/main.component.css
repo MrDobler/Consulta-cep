@@ -1,0 +1,31 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.content {
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.container {
+    text-align: center;
+}
+
+.hr {
+    margin-top: 2em;
+}
+
+.list {
+    margin-top: 2em;
+}
+
+span, .title {
+    color: #3f51b5;
+}
+
+.title {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+img {
+    width: 10%;
+}
